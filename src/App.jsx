@@ -29,7 +29,7 @@ function App() {
       setTask("");
       saveToLS(updatedTasks);
     } else {
-      alert("Task must be at least 4 characters long.");
+      alert("Task must be at least 3 characters long.");
     }
   };
 
