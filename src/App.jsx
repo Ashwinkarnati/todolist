@@ -22,7 +22,7 @@ function App() {
   };
 
   const handleAdd = () => {
-    if (task.trim().length > 3) {
+    if (task.trim().length >= 3) {
       const newTask = { id: uuidv4(), task: task.trim(), isCompleted: false };
       const updatedTasks = [...tasks, newTask];
       setTasks(updatedTasks);
